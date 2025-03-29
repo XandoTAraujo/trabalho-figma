@@ -24,7 +24,8 @@ header {
 .top-left {
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta para o centro */
     width: 100px; /* Largura do quadrado */
     height: 100px; /* Altura do quadrado */
     background-color: #e0e0e0; /* Cor de fundo do espaço vago */
@@ -41,7 +42,8 @@ header {
 .bottom-left {
     position: absolute;
     bottom: 20px;
-    left: 20px;
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta para o centro */
     width: 100px; /* Largura do quadrado */
     height: 100px; /* Altura do quadrado */
     background-color: #e0e0e0; /* Cor de fundo do espaço vago */
@@ -50,7 +52,8 @@ header {
 .bottom-right {
     position: absolute;
     bottom: 20px;
-    right: 20px;
+    right: 50%; /* Centraliza horizontalmente */
+    transform: translateX(50%); /* Ajusta para o centro */
     width: 100px; /* Largura do quadrado */
     height: 100px; /* Altura do quadrado */
     background-color: #e0e0e0; /* Cor de fundo do espaço vago */
