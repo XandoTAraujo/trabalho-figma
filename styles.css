@@ -11,6 +11,10 @@ body {
 header {
     height: 60px;
     background-color: #007BFF; /* Azul */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
@@ -18,17 +22,6 @@ header {
     flex-direction: column;
     height: calc(100vh - 120px); /* Altura total menos cabeçalho e rodapé */
     padding: 20px;
-    position: relative;
-}
-
-.top-left {
-    position: absolute;
-    top: 30px; /* Distância do topo */
-    left: 30px; /* Distância da esquerda */
-    width: 60px; /* Largura do quadrado */
-    height: 60px; /* Altura do quadrado */
-    background-color: #e0e0e0; /* Cor de fundo do espaço vago */
-    transform: rotate(45deg); /* Rotação de 45 graus */
 }
 
 .content {
@@ -36,30 +29,14 @@ header {
     background-color: #ffffff;
     padding: 20px;
     border: 1px solid #ccc;
-    margin: 20px 0; /* Margem para separar do espaço vago */
-}
-
-.bottom-left {
-    position: absolute;
-    bottom: 30px; /* Distância da parte inferior */
-    left: 30px; /* Distância da esquerda */
-    width: 60px; /* Largura do quadrado */
-    height: 60px; /* Altura do quadrado */
-    background-color: #e0e0e0; /* Cor de fundo do espaço vago */
-    transform: rotate(-45deg); /* Rotação de -45 graus */
-}
-
-.bottom-right {
-    position: absolute;
-    bottom: 30px; /* Distância da parte inferior */
-    right: 30px; /* Distância da direita */
-    width: 60px; /* Largura do quadrado */
-    height: 60px; /* Altura do quadrado */
-    background-color: #e0e0e0; /* Cor de fundo do espaço vago */
-    transform: rotate(45deg); /* Rotação de 45 graus */
+    margin: 20px 0; /* Margem para separar do conteúdo */
 }
 
 footer {
     height: 60px;
     background-color: #007BFF; /* Azul */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
