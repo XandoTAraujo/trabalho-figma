@@ -1,34 +1,62 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Site Exemplo</title>
-</head>
-<body>
-    <header>
-        <!-- Cabeçalho Vago -->
-    </header>
-    
-    <div class="container">
-        <div class="top-left">
-            <!-- Espaço Vago Superior Esquerdo -->
-        </div>
-        <div class="content">
-            <h1>Título do Conteúdo</h1>
-            <p>Este é um espaço para texto. Você pode adicionar qualquer conteúdo aqui.</p>
-        </div>
-        <div class="bottom-left">
-            <!-- Espaço Vago Inferior Esquerdo -->
-        </div>
-        <div class="bottom-right">
-            <!-- Espaço Vago Inferior Direito -->
-        </div>
-    </div>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    <footer>
-        <!-- Rodapé Vago -->
-    </footer>
-</body>
-</html>
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    height: 60px;
+    background-color: #007BFF; /* Azul */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 120px); /* Altura total menos cabeçalho e rodapé */
+    padding: 20px;
+    position: relative;
+}
+
+.top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px; /* Largura do quadrado */
+    height: 100px; /* Altura do quadrado */
+    background-color: #e0e0e0; /* Cor de fundo do espaço vago */
+}
+
+.content {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px 0; /* Margem para separar do espaço vago */
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 100px; /* Largura do quadrado */
+    height: 100px; /* Altura do quadrado */
+    background-color: #e0e0e0; /* Cor de fundo do espaço vago */
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px; /* Largura do quadrado */
+    height: 100px; /* Altura do quadrado */
+    background-color: #e0e0e0; /* Cor de fundo do espaço vago */
+}
+
+footer {
+    height: 60px;
+    background-color: #007BFF; /* Azul */
+}
