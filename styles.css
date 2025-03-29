@@ -10,7 +10,7 @@ body {
 
 header {
     height: 60px;
-    background-color: #007BFF; /* Azul */
+    background-color: #f0f0f0;
 }
 
 .container {
@@ -18,48 +18,34 @@ header {
     flex-direction: column;
     height: calc(100vh - 120px); /* Altura total menos cabeçalho e rodapé */
     padding: 20px;
-    position: relative;
 }
 
 .top-left {
-    position: absolute;
-    top: 20px;
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translateX(-50%); /* Ajusta para o centro */
-    width: 100px; /* Largura do quadrado */
-    height: 100px; /* Altura do quadrado */
-    background-color: #e0e0e0; /* Cor de fundo do espaço vago */
+    flex: 1;
+    background-color: #e0e0e0;
+    margin-bottom: 20px; /* Espaço entre o topo e o conteúdo */
 }
 
 .content {
-    flex: 1;
+    flex: 2;
     background-color: #ffffff;
     padding: 20px;
     border: 1px solid #ccc;
-    margin: 20px 0; /* Margem para separar do espaço vago */
 }
 
 .bottom-left {
-    position: absolute;
-    bottom: 20px;
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translateX(-50%); /* Ajusta para o centro */
-    width: 100px; /* Largura do quadrado */
-    height: 100px; /* Altura do quadrado */
-    background-color: #e0e0e0; /* Cor de fundo do espaço vago */
+    flex: 1;
+    background-color: #e0e0e0;
+    margin-top: 20px; /* Espaço entre o conteúdo e o fundo */
 }
 
 .bottom-right {
-    position: absolute;
-    bottom: 20px;
-    right: 50%; /* Centraliza horizontalmente */
-    transform: translateX(50%); /* Ajusta para o centro */
-    width: 100px; /* Largura do quadrado */
-    height: 100px; /* Altura do quadrado */
-    background-color: #e0e0e0; /* Cor de fundo do espaço vago */
+    flex: 1;
+    background-color: #e0e0e0;
+    margin-top: 20px; /* Espaço entre o fundo e o rodapé */
 }
 
 footer {
     height: 60px;
-    background-color: #007BFF; /* Azul */
+    background-color: #f0f0f0;
 }
